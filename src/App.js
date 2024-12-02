@@ -27,7 +27,7 @@ function Weather({city}) {
   }, [weatherData]);
 
   return (
-    <div className="Weather">
+    <div className="weather">
       <p>Miejsce: {weatherData?.name}</p>
       <p>Temperatura: {weatherData?.main?.temp}°C</p>
       <p>Pogoda: {weatherData?.weather?.[0]?.description}</p>
@@ -85,3 +85,4 @@ export default function App() {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
+
